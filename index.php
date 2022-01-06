@@ -75,7 +75,7 @@
 	
    <body>
       
-      <h2>Plese Enter Your Username and Password</h2> 
+      <h2>Plese Enter Your ID and Password</h2> 
       <div class = "container form-signin">
          
          <?php
@@ -84,7 +84,7 @@
             if (isset($_POST['login']) && !empty($_POST['username']) 
                && !empty($_POST['password'])) {
 				
-               if ($_POST['username'] == 'SHYAM' && 
+               if ($_POST['username'] == 'test' && 
                   $_POST['password'] == '1234') {
                   $_SESSION['valid'] = true;
                   $_SESSION['timeout'] = time();
